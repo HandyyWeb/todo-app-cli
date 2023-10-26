@@ -1,12 +1,13 @@
 const yargs = require('yargs');
+
 const usage = 'todo [option] <value>';
 
-yargs
+const options = yargs
   .usage(usage)
   .options({
     new: {
       demandOption: false,
-      type: 'string',
+      type: 'array',
       describe: 'Add a new todo item to the todo list',
     },
     list: {
@@ -27,7 +28,7 @@ yargs
   })
   .help(true).argv;
 
-const option = Object.keys(yargs.argv)[1]; // Get the option used by the user
-const args = yargs.argv[`${option}`]; // Get the option's argument entered by the user
+const option = Object.keys(options)[1]; // Get the option used by the user
+const args = options[`${option}`]; // Get the option's argument entered by the user
 
 module.exports = { args, option };
