@@ -4,7 +4,7 @@
 
 # Screenshot
 
-![Cli screenshot](./assets/Screenshot.png)
+![Cli screenshot](screenshots/s1.png)
 
 # Get Started
 
@@ -19,9 +19,9 @@ Then, you can install the comand globally
 
 # Prerequisites
 
-You need to have postgreSQL installed on your computer, for further information, take a look at the link : [Installation](https://www.postgresql.org/download/)
+You need to have postgreSQL installed on your computer, for more information, see the link : [Installation](https://www.postgresql.org/download/)
 
-Then, use your user account, your databse and your password in the file bin/db/dbconnect.js to connect to your database.
+Then, use your user account, your database and your password in the file bin/db/dbconnect.js file to connect to your database.
 
 ```
 const pg = require('pg');
@@ -40,7 +40,7 @@ module.exports = { connect };
 
 # Documentation
 
-This command allow you to create a todo list and to manage it thanks to 4 options
+This command allows you to create a todo list and to manage it thanks to 4 options
 
 - list [all || done || pending]
 - add [value]
@@ -49,7 +49,7 @@ This command allow you to create a todo list and to manage it thanks to 4 option
 
 ## List todos
 
-Use `todo --list [all || done || peding]` to list respectively all the todos, the todos that is done and the todo that need to be done.
+Use `todo --list [all || done || pending]` to list respectively all the todos, the todos that are done and the todos that need to be done.
 
 Example
 
@@ -59,7 +59,7 @@ Example
 
 ## Add a new todo
 
-Use `todo --new [name]` to add a new todo within the todolist with the corresponding name.
+Use `todo --new [name]` to add a new todo with the specified name to the todo list.
 
 Example
 
@@ -67,7 +67,7 @@ Example
 
 ## Update a todo
 
-Use `todo --done [id]` to update the todo state, designated by the id.
+Use `todo --done [id]` to update the todo state, with the specified id.
 
 Example
 
@@ -75,7 +75,7 @@ Example
 
 ## Delete a todo
 
-Use `todo --del [id]` to delete the todo designated by the id.
+Use `todo --del [id]` to delete the todo, with the specified id.
 
 Example
 

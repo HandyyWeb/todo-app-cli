@@ -6,6 +6,7 @@ const {
 } = require('./controller');
 
 const queryDb = (mode, value) => {
+  // Select the correct function according to the function the user wants to perform.
   switch (mode) {
     case 'new':
       addItem(value);
