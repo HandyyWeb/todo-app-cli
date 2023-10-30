@@ -1,10 +1,10 @@
 const pg = require('pg');
 
 const connect = new pg.Pool({
-  user: 'andy',
+  user: // -- Your user name on PostgreSQL --,
   host: 'localhost',
-  database: 'test',
-  password: 'Am2EacSP2vds!',
+  database: // -- Your database name on PostgreSQL --,
+  password: // -- Your user password on PostgreSQL --,
   port: 5432,
 });
 
